@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import localBirdImage from '../../public/images/elize.png';
+---
+
 <style>
   .products {
     width: 100%;
@@ -68,7 +73,9 @@
     <!-- Ejemplo de productos, repite este bloque para cada producto -->
 
     <div class="producto">
-      <img src="./public/images/elize.png" alt="Nombre del Producto 1" />
+      <!-- <img src="./public/images/elize.png" alt="Nombre del Producto 1" /> -->
+      <Image src={localBirdImage} alt="Un pájaro sentado sobre un nido de huevos."/>
+
       <div class="nombre-producto">
         Aplicacion Movil para el control de un sistema educativo
       </div>
