@@ -10,6 +10,7 @@
 </header>
 
 <style>
+
   /* styles.css */
   nav {
     position: fixed;
@@ -18,8 +19,10 @@
     right: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #6200ee;
     padding: 10px;
+    height: 80px;
   }
 
   nav ul {
@@ -31,12 +34,30 @@
 
   nav li {
     margin: 0 15px;
+    /* center height */
+    align-content: center;
   }
 
   nav a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
+    /* center */
+    
   }
+  /* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  nav li {
+    margin: 5px 0;
+    flex: 1;
+  }
+}
 </style>

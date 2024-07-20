@@ -1,18 +1,20 @@
 <style>
-
   .container {
     text-align: center;
     padding: 20px;
     max-width: 700px;
     margin: 0 auto;
-    height: 70vh;
+    /* height: 80vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
   }
-  h1 {
+  h2 {
     color: #333;
+    font-size: 2.5rem; 
+    
   }
   ul {
     list-style: none;
@@ -29,30 +31,38 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1.5rem;
   }
-  li img{
+  li img {
     width: 150px;
     margin-right: 10px;
   }
   @media (max-width: 768px) {
     .container {
       padding: 10px;
+      padding-top: 80px;
     }
-    h1 {
-      font-size: 1.5rem;
+    h2 {
+      font-size: 1.7rem;
+    }
+    li{
+      font-size: 1.2rem;
+    
     }
   }
 </style>
 <div class="container" id="servicios">
-  <h1>Servicios que ofrecemos</h1>
+  <h2>Servicios que ofrecemos</h2>
   <ul>
     <li>
-        <img src="./images/movil.png" alt="movil">
-        Desarrollo de aplicaciones móviles</li>
+      <img src="./public/images/movil.png" alt="movil" />
+      Desarrollo de aplicaciones móviles
+    </li>
     <li>
-        <img src="./images/pweb.webp" alt="web">
-        Páginas web</li>
+      <img src="./public/images/pweb.webp" alt="web" />
+      Páginas web
+    </li>
     <li>
-        <img src="./images/solu.png" alt="seo">
-        Soluciones informáticas</li>
+      <img src="./public/images/solu.png" alt="seo" />
+      Soluciones informáticas
+    </li>
   </ul>
 </div>
