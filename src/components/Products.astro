@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import localBirdImage from '../../public/images/elize.png';
+import srcPathImage from "../assets/elize.png"
 ---
 
 <style>
@@ -74,7 +74,7 @@ import localBirdImage from '../../public/images/elize.png';
 
     <div class="producto">
       <!-- <img src="./public/images/elize.png" alt="Nombre del Producto 1" /> -->
-      <Image src={localBirdImage} alt="Un pájaro sentado sobre un nido de huevos."/>
+      <Image src={srcPathImage} alt="app movil educaticva"/>
 
       <div class="nombre-producto">
         Aplicacion Movil para el control de un sistema educativo
