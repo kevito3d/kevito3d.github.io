@@ -1,3 +1,11 @@
+---
+import { Image } from "astro:assets";
+import srcPathImage from "../assets/img/movil.png";
+import srcPathImagep from "../assets/img/pweb.webp";
+import srcPathImagepsolu from "../assets/img/solu.png";
+
+---
+
 <style>
   .container {
     text-align: center;
@@ -32,7 +40,8 @@
     font-size: 1.5rem;
   }
   li img {
-    width: 150px;
+    width: 200px;
+    height: 150px;
     margin-right: 10px;
   }
   @media (max-width: 768px) {
@@ -53,15 +62,18 @@
   <h2>Servicios que ofrecemos</h2>
   <ul>
     <li>
-      <img src="./public/images/movil.png" alt="movil" />
+      <!-- <img src="./public/images/movil.png" alt="movil" /> -->
+      <Image src={srcPathImage} alt="movil"/>
       Desarrollo de aplicaciones móviles
     </li>
     <li>
-      <img src="./public/images/pweb.webp" alt="web" />
+      <!-- <img src="./public/images/pweb.webp" alt="web" /> -->
+       <Image src={srcPathImagep} alt="web"/>
       Páginas web
     </li>
     <li>
-      <img src="./public/images/solu.png" alt="seo" />
+      <!-- <img src="./public/images/solu.png" alt="seo" /> -->
+      <Image src={srcPathImagepsolu} alt="seo"/>
       Soluciones informáticas
     </li>
   </ul>

@@ -1,5 +1,11 @@
+---
+import { Image } from "astro:assets";
+import srcPathImage from "../assets/img/images.jpeg";
+---
+
 <section id="quienes-somos" class="about-us">
-  <img src="/public//images/images.jpeg" alt="sociedad" />
+  <!-- <img src="/public//images/images.jpeg" alt="sociedad" /> -->
+  <Image src={srcPathImage} alt="app movil educaticva" />
   <div class="container">
     <h2>Acerca de Nosotros</h2>
     <p>

@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import srcPathImage from "../assets/elize.png";
+import srcPathImage from "../assets/img/elize.png";
+import srcPathImageP from "../assets/img/tropical.png";
 ---
 
 <style>
@@ -81,7 +82,8 @@ import srcPathImage from "../assets/elize.png";
       </div>
     </div>
     <div class="producto">
-      <img src="/public/images/tropical.png" alt="Nombre del Producto 2" />
+      <!-- <img src="/public/images/tropical.png" alt="Nombre del Producto 2" /> -->
+      <Image src={srcPathImageP} alt="app web productos"/>
       <div class="nombre-producto">
         Web para administrar productos, categorias y clientes
       </div>
