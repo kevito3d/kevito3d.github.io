@@ -1,0 +1,74 @@
+<section id="quienes-somos" class="about-us">
+  <img src="/public//images/images.jpeg" alt="sociedad" />
+  <div class="container">
+    <h2>Acerca de Nosotros</h2>
+    <p>
+      Somos una empresa dedicada a el desarrollo de software, comprometidos con
+      la resolución problemas que se presentan en la sociedad. Nuestra pasión es
+      Generar satisfaccion en nuestros clientes, y trabajamos día a día para
+      lograrlo.
+    </p>
+  </div>
+</section>
+
+<style>
+  .about-us {
+    display: flex;
+    /* flex-direction: column; Cambia la dirección a columna en dispositivos pequeños */
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Ocupa gran parte de la página */
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Fondo claro para un diseño minimalista */
+    color: #333; /* Texto oscuro para contraste */
+    /* como puedo referirme a un elemento dentro de este elemento por ejemplo una img*/
+  }
+  .about-us img {
+    width: 350px;
+  }
+
+  .container {
+    /* Ancho máximo para el contenido */
+    max-width: 750px;
+    text-align: center; /* Centra el texto */
+    padding: 0 15px; /* Añade padding para evitar que el texto toque los bordes en pantallas pequeñas */
+  }
+  .about-us h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2.5rem; /* Tamaño grande para el título */
+  }
+  .about-us p {
+    font-size: 1.2rem; /* Tamaño cómodo para la lectura */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+  }
+  /* media queri para celulares */
+
+  /* Media queries */
+  @media (max-width: 768px) {
+    .about-us {
+      flex-direction: column; /* Cambia la dirección a columna en dispositivos pequeños */
+    }
+    .about-us img {
+      /* width: 100%;  */
+      margin-bottom: 25px; /* Espacio debajo de la imagen */
+    }
+    .about-us h2 {
+      font-size: 2rem; /* Reduce el tamaño del título para pantallas pequeñas */
+    }
+    .about-us p {
+      font-size: 1rem; /* Reduce el tamaño del texto para pantallas pequeñas */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-us {
+      padding: 20px 10px; /* Reduce el padding para pantallas muy pequeñas */
+    }
+    .about-us h2 {
+      font-size: 1.5rem; /* Reduce aún más el tamaño del título para pantallas muy pequeñas */
+    }
+    .about-us p {
+      font-size: 0.9rem; /* Reduce aún más el tamaño del texto para pantallas muy pequeñas */
+    }
+  }
+</style>
